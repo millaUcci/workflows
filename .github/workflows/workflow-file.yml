@@ -1,7 +1,7 @@
 name: CI
 # Controles de evento para execução
 on:
-  # Atualização na branch “MASTER/MAIN” por push ou pull-request
+  # Atualização na branch “main” por push ou pull-request
   push:
     branches: [ "main" ]
   pull_request:
@@ -15,7 +15,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run a one-line script
         run: echo Hello, world!
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Run a one-line script
+        run: echo Usando a Branch MAIN!
